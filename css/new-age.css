@@ -71,7 +71,7 @@ section h2 {
 }
 
 #mainNav .navbar-brand {
-  color: #fdcc52;
+  color: #ffffff;
   font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
   font-weight: 200;
   letter-spacing: 1px;
@@ -289,7 +289,7 @@ section.features .feature-item i {
 section.cta {
   position: relative;
   padding: 250px 0;
-  background-image: url("../img/bg-cta.jpg");
+  background-image: url("../img/arkansas.png");
   background-position: center;
   background-size: cover;
 }
@@ -301,7 +301,6 @@ section.cta .cta-content {
 
 section.cta .cta-content h2 {
   font-size: 50px;
-  max-width: 450px;
   margin-top: 0;
   margin-bottom: 25px;
   color: white;
@@ -407,6 +406,10 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   background: linear-gradient(135deg, #500000 0%,#500000 50%,#f66733 50%,#f66733 100%);
 }
 
+.bg-primary2 {
+  background: #edeef0;
+}
+
 .text-primary {
   color: #fdcc52;
 }
@@ -417,15 +420,16 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 }
 
 .btn-outline {
-  color: white;
+  color: black;
   border: 1px solid;
-  border-color: white;
+  border-color: #500000;
+  background: white;
 }
 
 .btn-outline:hover, .btn-outline:focus, .btn-outline:active, .btn-outline.active {
   color: white;
-  border-color: #fdcc52;
-  background-color: #fdcc52;
+  border-color: #fff;
+  background-color: #500000;
 }
 
 .btn {
