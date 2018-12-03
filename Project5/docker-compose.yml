@@ -1,0 +1,27 @@
+version: '3'
+
+services:
+  api:
+    build: ./api
+    image: colbert1500/api
+    ports:
+            - "5000:5000"
+    networks:
+            - webnet
+
+  redis:
+    image: redis
+    networks:
+            - webnet
+
+  cli:
+    build: ./cli
+    image: colbert1500/cli
+    stdin_open: true
+    tty: true
+    networks:
+            - webnet
+
+networks:
+  webnet:
+    driver: bridge
