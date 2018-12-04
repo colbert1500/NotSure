@@ -2,7 +2,7 @@ version: '3'
 
 services:
   api:
-    build: ./api
+    #build: ./api
     image: colbert1500/api
     ports:
             - "5000:5000"
@@ -17,7 +17,7 @@ services:
     container_name: group4_db
 
   cli:
-    build: ./cli
+    #build: ./cli
     image: colbert1500/cli
     stdin_open: true
     tty: true
