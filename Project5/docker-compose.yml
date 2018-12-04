@@ -8,11 +8,13 @@ services:
             - "5000:5000"
     networks:
             - webnet
+    container_name: group4_api
 
   redis:
     image: redis
     networks:
             - webnet
+    container_name: group4_db
 
   cli:
     build: ./cli
@@ -21,6 +23,7 @@ services:
     tty: true
     networks:
             - webnet
+    container_name: group4_cli
 
 networks:
   webnet:
